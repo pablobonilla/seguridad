@@ -2,7 +2,7 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Salud y Seguridad Ocupacional';
 ?>
 <div class="site-index">
 
@@ -50,4 +50,48 @@ $this->title = 'My Yii Application';
         </div>
 
     </div> -->
-</div>
+    <div class="highlights">
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="index.php?r=empleados" class="icon fa fa-user"><span class="label">Icon</span></a>
+                        <h3>EMPLEADOS</h3>
+                    </header>
+                    <!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
+                </div>
+            </section>
+
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="index.php?r=departamentos" class="icon fa fa-sitemap"><span class="label">Icon</span></a>
+                        <h3>DEPARTAMENTOS</h3>
+                    </header>
+                    <!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
+                </div>
+            </section>
+
+
+            <section>
+                <div class="content">
+                    <header>
+                        <a href="index.php?r=grupo" class="icon fa fa-users"><span class="label">Icon</span></a>
+                        <h3>GRUPOS</h3>
+                    </header>
+                    <!-- <p>Nunc lacinia ante nunc ac lobortis ipsum. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus.</p> -->
+                </div>
+            </section>
+
+        </div> 
+            
+    </div>
+
+  
+            
+  
+
+                    
+                   
+                    
+  
+		

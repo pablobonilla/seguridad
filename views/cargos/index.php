@@ -2,6 +2,12 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widgets\Pjax;
+use yii\bootstrap\Modal;
+use yii\helpers\BaseUrl;
+
+//use yii\bootstrap\Modal; 
+
 
 /* @var $this yii\web\View */
 /* @var $searchModel app\models\CargosSearch */
@@ -15,11 +21,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Cargos', ['create'], ['class' => 'btn btn-success']) ?>
+        
+        <?= Html::a('Crear Cargos', ['value'=>Url::to('index.php?r=cargos'),'class' => 'btn btn-success','id'=>'modalButton']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
+    <?php 
+    
+         Modal::begin([
+             'header'=>'<h4>Cargos</h4>',
+             'id'=>'modal',
+             'size'=>'modal-lg',
+         ]);
+         echo "<div id='modalContent'></div>";
+         Modal::end();
+        
+    ?>
+
+    
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
